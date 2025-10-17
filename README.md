@@ -19,11 +19,13 @@ This project demonstrates **serverless architecture**, **cloud automation**, and
 
 ## Architecture
 
-![8](IMG/8.png)
+```
+![a](IMG/8.png)
+
 
 ```
 
-## Components:
+**Components:**
 1. **AWS Lambda**: Runs the Python code to fetch weather data and publish alerts.  
 2. **Amazon SNS**: Sends email notifications to subscribers.  
 3. **Amazon EventBridge**: Automatically triggers Lambda on a schedule.  
@@ -46,9 +48,10 @@ This project demonstrates **serverless architecture**, **cloud automation**, and
 1. Go to **AWS SNS Console → Topics → Create topic**.  
 2. Choose **Standard** type.  
 3. Name: `weather-alerts`  
-4. Click **Create topic**. 
+4. Click **Create topic**.
 
-![1](IMG/1.png)
+
+![b](IMG/1.png)
 
 
 ### Step 2: Subscribe to the Topic
@@ -57,16 +60,18 @@ This project demonstrates **serverless architecture**, **cloud automation**, and
 3. Endpoint: Your email address  
 4. Check your email and **confirm the subscription**.
 
-![2](IMG/2.png)
+![c](IMG/2.png)
 
 
 ### Step 3: Create a Lambda Function
 1. Go to **AWS Lambda → Create function → Author from scratch**.  
 2. Function name: `WeatherNotificationFunction`  
 3. Runtime: Python 3.12  
-4. Permissions: Create a new role with basic Lambda permissions 
+4. Permissions: Create a new role with basic Lambda permissions
 
-![3](IMG/3.png)
+![d](IMG/3.png)
+
+
 
 ### Step 4: Add Environment Variables
 | Key | Value |
@@ -115,7 +120,7 @@ def lambda_handler(event, context):
 1. Go to **Configuration → Permissions → Execution Role**  
 2. Attach the **AmazonSNSFullAccess** policy.
 
-![9](IMG/9.png)
+![e](IMG/9.png)
 
 
 ### Step 7: Test Lambda
@@ -123,7 +128,8 @@ def lambda_handler(event, context):
 2. Click **Test**  
 3. Check your email for alerts.
 
-![5](IMG/5.png)
+![f](IMG/5.png)
+
 
 ### Step 8: Automate Using EventBridge
 1. Go to **EventBridge → Rules → Create rule**  
@@ -131,15 +137,14 @@ def lambda_handler(event, context):
 3. Target: Lambda function → `WeatherNotificationFunction`  
 4. Create rule → Lambda runs automatically on schedule.
 
-![6](IMG/6.png)
+![g](IMG/6.png)
+
 
 ---
-## Screenshots 
 
-**SNS confirmation email**
+## Email Screenshots (SNS confirmation email)
 
-![7](IMG/7.png)
-
+![h](IMG/7.png)
 ---
 
 ## How It Works
@@ -170,7 +175,7 @@ def lambda_handler(event, context):
 
 ## Author
 **Ganesh Jadhav** – Aspiring Cloud & AWS Developer
-📧 Email: [jadhavg9370@gmail.com](mailto:jadhavg9370@gmail.com)
+📧 Email: [jadhavg9370@gmail.com](mailto:jadhavg9370@gmail.com)  
 🔗 LinkedIn: [Ganesh Jadhav](https://www.linkedin.com/in/ganesh-jadhav-30813a267/)
 
-
+---
