@@ -19,7 +19,6 @@ This project demonstrates **serverless architecture**, **cloud automation**, and
 
 ## Architecture
 
-```
 ![8](IMG/8.png)
 
 ```
@@ -135,7 +134,8 @@ def lambda_handler(event, context):
 ![6](IMG/6.png)
 
 ---
-## Screenshots (Optional)
+## Screenshots 
+
 **SNS confirmation email**
 
 ![7](IMG/7.png)
