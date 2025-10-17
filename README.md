@@ -18,12 +18,10 @@ This project demonstrates **serverless architecture**, **cloud automation**, and
 ---
 
 ## Architecture
+---
 
-```
 ![a](IMG/8.png)
-
-
-```
+---
 
 **Components:**
 1. **AWS Lambda**: Runs the Python code to fetch weather data and publish alerts.  
