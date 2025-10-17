@@ -23,7 +23,7 @@ This project demonstrates **serverless architecture**, **cloud automation**, and
 
 ```
 
-**Components:**
+## Components:
 1. **AWS Lambda**: Runs the Python code to fetch weather data and publish alerts.  
 2. **Amazon SNS**: Sends email notifications to subscribers.  
 3. **Amazon EventBridge**: Automatically triggers Lambda on a schedule.  
